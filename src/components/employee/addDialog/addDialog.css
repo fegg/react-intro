@@ -1,0 +1,7 @@
+.employeeAddDialog .addDialog {
+    margin: 10px 20px 0 20px;
+}
+
+.employeeAddDialog .addDialog .smarty-input {
+    margin-top: 10px;
+}

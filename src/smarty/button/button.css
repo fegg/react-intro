@@ -1,0 +1,35 @@
+.st-btn {
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+    background: #fff;
+    border: 0 none;
+    padding: 6px 15px;
+    border-radius: 3px;
+    letter-spacing: .1em;
+    box-sizing: border-box;
+}
+.st-btn:focus {
+    outline: 0 none;
+}
+.st-btn-white {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.st-btn-white:hover {
+    background: #eee;
+}
+.st-btn-blue {
+    color: #fff;
+    background: #108ee9;
+}
+.st-btn-blue:hover {
+    background: #49a9ee;
+}
+.st-btn-red {
+    color: #fff;
+    background: #ed433b;
+}
+.st-btn-red:hover {
+    background: #ff4940;
+}

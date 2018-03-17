@@ -1,0 +1,51 @@
+.clearfix::after {
+    display: table;
+    content: '\20';
+    clear: both;
+}
+
+.mod {
+    padding: 20px;
+}
+
+.mod-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.mod-header {
+    margin: 15px 0;
+}
+
+.mod-header-search {
+    float: left;
+    width: 200px;
+}
+
+.mod-header-other {
+    float: right;
+}
+
+.mod-table {
+    position: relative;
+}
+
+.mod-table-loadingWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.mod-table-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
