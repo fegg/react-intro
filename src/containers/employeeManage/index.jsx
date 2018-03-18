@@ -95,21 +95,21 @@ class EmployeeManage extends React.Component {
         });
     }
 
-    handleCloseAddDialog() {
+    handleCloseEditDialog() {
         this.setState(prevState => {
             const newState = {
-                visibleAddDialog: false,
+                currentSelected: null,
+                visibleEditDialog: false,
             };
 
             return newState;
         });
     }
 
-    handleCloseEditDialog() {
+    handleCloseAddDialog() {
         this.setState(prevState => {
             const newState = {
-                currentSelected: null,
-                visibleEditDialog: false,
+                visibleAddDialog: false,
             };
 
             return newState;

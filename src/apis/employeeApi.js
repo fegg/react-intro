@@ -49,7 +49,7 @@ function mockRequest(data) {
         setTimeout(function () {
             resolve({
                 status: 200,
-                data
+                data: [].concat(data),
             });
         }, 2000);
     });
