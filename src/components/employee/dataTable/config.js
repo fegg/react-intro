@@ -8,6 +8,12 @@ const config = {
         {
             field: 'name',
             title: '员工姓名',
+            width: 120,
+        },
+        {
+            field: 'days',
+            title: '请假天数',
+            width: 90,
         },
         {
             field: 'age',

@@ -20,6 +20,7 @@ export default class EmployeeEditDialog extends React.PureComponent {
         this.handleClose = this.handleClose.bind(this);
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeAge = this.handleChangeAge.bind(this);
+        this.handleChangeDays = this.handleChangeDays.bind(this);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -52,6 +53,21 @@ export default class EmployeeEditDialog extends React.PureComponent {
                 formData: {
                     ...prevState.formData,
                     name: rValue,
+                }
+            };
+
+            return newState;
+        });
+    }
+
+    handleChangeDays(value, e) {
+        const rValue = value.trim();
+
+        this.setState(prevState => {
+            const newState = {
+                formData: {
+                    ...prevState.formData,
+                    days: rValue,
                 }
             };
 
@@ -95,6 +111,7 @@ export default class EmployeeEditDialog extends React.PureComponent {
                 renderFooter={() => footer}>
                 <div className="addDialog">
                     <Input defaultValue={formData.name} onChange={this.handleChangeName} placeholder="请输入姓名" />
+                    <Input defaultValue={formData.days} onChange={this.handleChangeDays} placeholder="请输入天数" />
                     <Input defaultValue={formData.age} onChange={this.handleChangeAge} placeholder="请输入年龄" />
                 </div>
             </Dialog>

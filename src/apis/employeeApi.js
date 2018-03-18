@@ -3,13 +3,15 @@ let data = [
         id: 1,
         name: 'lulin1',
         age: 17,
-        sex: 'M'
+        sex: 'M',
+        days: 1,
     },
     {
         id: 2,
         name: 'lulin2',
         age: 0,
-        sex: 'F'
+        sex: 'F',
+        days: 2,
     }
 ];
 
